@@ -1,0 +1,10 @@
+def fib(n: int):
+  fab =[]
+  for i in range(0,n+1):
+    if(i==0):
+      fab.append(0)
+    elif(i==1):
+      fab.append(1)
+    else:
+      fab.append(fab[i-1]+fab[i-2])
+  return fab[-1]
